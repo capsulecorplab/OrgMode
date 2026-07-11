@@ -9,10 +9,10 @@ BaselineOfOrgMode >> baseline: spec [
 
 	<baseline>
 	spec for: #common do: [ 
-		spec
-			baseline: 'PetitParser'
-			with: [ 
-			spec repository: 'github://moosetechnology/PetitParser:v3.x.x/src' ].
+		spec baseline: 'PetitParser' with: [ 
+			spec
+				loads: #( 'Core' );
+				repository: 'github://moosetechnology/PetitParser:v3.x.x/src' ].
 		spec package: 'OrgMode' with: [ spec requires: #( 'PetitParser' ) ].
 		spec
 			package: 'OrgMode-Tests'
