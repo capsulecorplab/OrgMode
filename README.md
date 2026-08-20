@@ -1,18 +1,22 @@
-# OrgMode [![Build Status](https://travis-ci.org/JurajKubelka/OrgMode.svg?branch=master)](https://travis-ci.org/JurajKubelka/OrgMode)
+# OrgMode
 
-This is a [Pharo](http://pharo.org) parser of [Org mode](http://orgmode.org) file.
+Forked repo of [OrgMode](https://github.com/JurajKubelka/OrgMode) parser, developed by JurajKubelka.
 
-Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
+## Status
 
-Orignal source code is in [SmalltalkHub](http://www.smalltalkhub.com/#!/~JurajKubelka/OrgMode/).
+Tests pass as of Pharo 13.0.
 
-## Installation 
+## Loading instructions
 
-It is tested on Pharo 5.0. For not it does not work on Pharo 6.0 (developement version), because Petit Parser configuration does not work properly (tested on August 12, 2016).
+### Starting from a Pharo image
 
-```
+Open a playground window (`Ctrl+O+W`) and evaluate:
+
+```smalltalk
 Metacello new
     baseline: #OrgMode;
-    repository: 'github://JurajKubelka/OrgMode/repository';
+    repository: 'github://capsulecorplab/OrgMode:main';
     load.
 ```
+
+Note: Evaluate by highlighting the text, then either right-click on the highlighted text and click `Do it` or press `Ctrl+D`.
