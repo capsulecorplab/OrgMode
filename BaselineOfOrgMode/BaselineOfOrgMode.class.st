@@ -11,7 +11,7 @@ BaselineOfOrgMode >> baseline: spec [
 	spec for: #common do: [ 
 		spec baseline: 'PetitParser' with: [ 
 			spec
-				loads: #( 'Core' 'PetitIndent' );
+				loads: #( 'Core' 'PetitIndent' 'PetitIslands' );
 				repository: 'github://moosetechnology/PetitParser:v3.x.x/src' ].
 		spec package: 'OrgMode' with: [ spec requires: #( 'PetitParser' ) ].
 		spec
